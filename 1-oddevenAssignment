@@ -1,0 +1,16 @@
+  function isOddOrEven(){
+    if (num % 2 == 0) {
+
+       return "The number is Even"
+       
+     }
+     else
+     {
+        return "The number is Odd"
+     }
+
+ }
+ let num = 5;
+ let numberValidation = isOddOrEven();
+ console.log(numberValidation);
+  
