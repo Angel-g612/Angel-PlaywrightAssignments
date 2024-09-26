@@ -1,0 +1,45 @@
+
+console.log("****************Executiing browser launch function*************");
+
+function launchBroswer(browserName)
+{
+    if(browserName == 'Chrome')
+    {
+        console.log("The browser is "+ browserName);
+        
+    }
+    else
+    {
+        console.log("The browser is "+ browserName);
+        
+    }
+}
+let browserName = 'Firefox'
+launchBroswer(browserName);
+
+console.log("**********************************************************");
+
+console.log("---------Finding the test type-----------");
+
+function runTests(testType) {
+    switch (testType) {
+        case 'Smoke':
+            console.log("The test type is Smoke");          
+            break;
+        case 'Sanity':
+            console.log("The test type is Sanity");          
+            break;   
+        case 'Regression':
+                console.log("The test type is Regression");          
+                break; 
+        default:
+            console.log("The default test type is Smoke");
+            break;
+    }
+        
+}
+let testType ='Sanity';
+runTests(testType);
+
+
+
