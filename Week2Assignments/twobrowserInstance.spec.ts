@@ -12,13 +12,13 @@ test(` Navigation to redbus via edge browser`, async () => {
     console.log(`The url of red bus is ${url1}`);
     
     const title1 = browserPage1.title();
-    console.log(`The titl of red bus is ${title1}`);
+    console.log(`The title of red bus is ${title1}`);
     
 })
 
 test(` Navigation to Flipkart via firefox browser`, async () => {
 
-    const instance2 = await chromium.launch({channel:"firefox"});
+    const instance2 = await firefox.launch({channel:"firefox"});
     const broswercontext2 = await instance2.newContext();
     const browserPage2 = await broswercontext2.newPage();
     await browserPage2.goto("https://www.flipkart.com/");
@@ -27,6 +27,6 @@ test(` Navigation to Flipkart via firefox browser`, async () => {
     console.log(`The url of flipkart is ${url1}`);
     
     const title1 = browserPage2.title();
-    console.log(`The titl of flipkart is ${title1}`);
+    console.log(`The title of flipkart is ${title1}`);
     
 })
